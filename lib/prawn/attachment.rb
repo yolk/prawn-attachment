@@ -82,7 +82,8 @@ module Prawn
         creation_date: opts[:created_at] || Time.now.utc,
         modification_date: opts[:modified_at] || Time.now.utc,
         description: opts[:description],
-        hidden: !!opts[:hidden]
+        hidden: !!opts[:hidden],
+        relationship: opts[:relationship]
       }
     end
 
